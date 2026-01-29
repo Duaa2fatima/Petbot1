@@ -146,6 +146,16 @@ body {
     width: 100%;
 }
 
+.card button {
+    margin: 10px 0;
+    padding: 8px 15px;
+    border: none;
+    background: linear-gradient(135deg, #1e5f4a, #14503a);
+    color: white;
+    border-radius: 6px;
+
+}
+
 
 /* footer  */
 footer {
