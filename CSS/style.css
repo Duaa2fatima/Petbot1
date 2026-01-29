@@ -156,6 +156,60 @@ body {
 
 }
 
+/* form */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #c2bfbf;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: linear-gradient(135deg, #1e5f4a, #14503a);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #1e5f4a, #14503a);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button :hover {
+    background: linear-gradient(135deg, #1e5f4a, #14503a);
+}
+
+/* form */
 
 /* footer  */
 footer {
