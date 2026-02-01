@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 /* Header styling */
 header {
     display: flex;
@@ -8,22 +15,6 @@ header {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* sliders */
-
-.main-carousel {
-    width: 100%;
-    height: 100vh;
-}
-
-.main-carousel .carousel-cell {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: contain;
-    background-repeat: no-repeat;
-}
-
-/* sliders end */
 /* Nav styling */
 nav {
     flex: 1;
@@ -83,41 +74,24 @@ body {
     height: 50px;
 }
 
-/* about */
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 40px;
+/*  Navbar end */
+
+/* sliders */
+
+.main-carousel {
+    width: 100%;
+    height: 100vh;
 }
 
-.about-text {
-    flex: 1;
+.main-carousel .carousel-cell {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: contain;
+    background-repeat: no-repeat;
 }
 
-.about-text h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.about-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: black;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
-.about-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+/* sliders end  */
 
 /* cards */
 
@@ -155,6 +129,8 @@ body {
     border-radius: 6px;
 
 }
+
+/* cards end */
 
 /* form */
 
@@ -209,66 +185,114 @@ button :hover {
     background: linear-gradient(135deg, #1e5f4a, #14503a);
 }
 
-/* form */
+/* form end */
 
-/* footer  */
-footer {
-    background-color: #5a9e89;
-    /* Dark green theme */
+/* about */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
     color: black;
-    padding: 40px 20px 20px;
-    font-family: 'Segoe UI', sans-serif;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About end */
+
+/* FOOTER */
+.footer {
+    background: #ffffff;
+    padding: 70px 80px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 
-.footer-container div {
-    flex: 1;
-    min-width: 200px;
+.footer-col h2.logo {
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
-.footer-about h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: black;
-    /* Golden accent */
-}
-
-.footer-links h4,
-.footer-contact h4 {
-    margin-bottom: 10px;
+.footer-col h3 {
+    margin-bottom: 15px;
     font-size: 18px;
-    color: black;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li {
+.footer-col p,
+.footer-col a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    display: block;
     margin-bottom: 8px;
 }
 
-.footer-links ul li a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease;
+.footer-col a:hover {
+    color: #7fb69d;
 }
 
-.footer-links ul li a:hover {
-    color: black;
+/* SOCIAL ICONS */
+.socials {
+    margin-top: 15px;
 }
 
-.footer-bottom {
+.socials a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid black;
-    padding-top: 15px;
-    font-size: 14px;
+    background: #1b3529;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: 0.3s;
 }
+
+.socials a:hover {
+    background: #3c996d;
+}
+
+/* WAVE */
+.footer-wave svg {
+    width: 100%;
+    height: 250px;
+    /* thick wave */
+    display: block;
+}
+
+.footer-wave path {
+    fill: #3c996d;
+}
+
+/* Footer end */
