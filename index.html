@@ -5,30 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NESTRO - Leading Manufacturer of PET, PP, and PC Bottles</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--Remix Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- header start  -->
-    <header>
+    <!-- Navbar -->
+    <div class="navbar-desktop">
         <div class="logo">
-            <img src="./images/logo1.png" <p>NESTRO</p>
+            <img src="./images/logo1.png" />
+            <p>NESTRO</p>
         </div>
-        <nav>
+        <div class="items">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./about.html">About</a>
+                </li>
+                <li class="dropdown">
+                    <a style="text-decoration: none; color: black" href="./categories.html">Categories &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./jars.html">Jars</a></li>
+                        <li><a href="./bottles.html">Bottles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a style="text-decoration: none; color: black" href="./contact.html">Contact</a>
+                </li>
             </ul>
-            <br>
-            <button>contact now</button>
-        </nav>
-    </header>
+        </div>
+        <div class="toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="navbar-mobile hide">
+        <p>
+            <a style="text-decoration: none; color: black" href="./index.html">Home</a>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./about.html">About</a>
+        </p>
+        <p class="mobile-dropdown">
+            <a style="text-decoration: none; color: black" href="./categories.html">Categories &#9662;</a>
+            <span class="mobile-dropdown-items hide">
+                <a href="./jars.html">Jars</a><br />
+                <a href="./bottles.html">Bottles</a>
+            </span>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./gallery.html">Gallery</a>
+        </p>
+        <p>
+            <a style="text-decoration: none; color: black" href="./contact.html">Contact</a>
+        </p>
+    </div>
+    <!-- End -->
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
         <div class="carousel-cell" style="background-image: url('./images/slide1.jpeg')"></div>
         <div class="carousel-cell" style="background-image: url('./images/slide2.jpeg');"></div>
@@ -41,82 +87,145 @@
     <!-- about  -->
 
     <!-- cards -->
-    <section class="popular-items">
-        <h1 id="product-heading">Items</h1>
-        <div class="cards">
-            <a href="card1.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide1.jpeg" alt="beauty product"></div>
-                    <div class="card-text">
-                        <h3>Cosmetics Packing</h3>
-                    </div>
-                </div>
-            </a>
+    <div class="cards-wrapper">
 
-            <a href="card2.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide2.jpeg" alt="jars"></div>
-                    <div class="card-text">
-                        <h3>Storage Jars</h3>
+        <a href="card1.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide1.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide2.jpeg">
                     </div>
                 </div>
-            </a>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
 
-            <a href="card3.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide8.jpeg" alt="ghee jars"></div>
-                    <div class="card-text">
-                        <h3>Juices Bottels</h3>
+        <a href="card2.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide2.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide3.jpeg">
                     </div>
                 </div>
-            </a>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
 
-            <a href="card4.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide4.jpeg" alt="containers"></div>
-                    <div class="card-text">
-                        <h3>Disposable Containers</h3>
-                    </div>
-                </div>
-            </a>
 
-            <a href="card5.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide5.jpeg" alt="bottles"></div>
-                    <div class="card-text">
-                        <h3>Bottels</h3>
+        <a href="card3.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide3.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide4.jpeg">
                     </div>
                 </div>
-            </a>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
 
-            <a href="card6.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide6.jpeg" alt="bottles"></div>
-                    <div class="card-text">
-                        <h3>Plastic Bottels</h3>
-                    </div>
-                </div>
-            </a>
 
-            <a href="card7.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide7.jpeg" alt="organization"></div>
-                    <div class="card-text">
-                        <h3>Kitchen Organizers</h3>
+        <a href="card4.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide4.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide5.jpeg">
                     </div>
                 </div>
-            </a>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
 
-            <a href="card8.html">
-                <div class="card">
-                    <div class="card-banner"><img src="./images/slide9.jpeg" alt="customization"></div>
-                    <div class="card-text">
-                        <h3>customize Your Brand Here</h3>
+
+        <a href="card5.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide5.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide6.jpeg">
                     </div>
                 </div>
-            </a>
-        </div>
-    </section>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="card6.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide6.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide7.jpeg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="card7.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide7.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide8.jpeg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="card8.html" class="card-link">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="./images/slide9.jpeg">
+                    </div>
+                    <div class="card-back">
+                        <img src="./images/slide8.jpeg">
+                    </div>
+                </div>
+                <div class="info">
+                    <h1>Simple PET Bottles</h1>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
     <!-- card end -->
     <!-- about section -->
     <div class="about-section">
@@ -184,7 +293,7 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="#" method="post">
+            <form id="form">
                 <label for="name">Full Name</label><br />
                 <input type="text" id="name" name="name" placeholder="Enter your name" required />
                 <br /><br />
@@ -217,7 +326,7 @@
                     required></textarea>
                 <br /><br />
 
-                <button id="submit type=" submit">Submit Feedback</button>
+                <button id="submit" type="submit">Submit Feedback</button>
             </form>
         </div>
     </div>
@@ -240,7 +349,7 @@
         </div>
 
         <div class="contact-form-container">
-            <form action="#" method="post">
+            <form id="contact">
                 <label>Full Name</label><br />
                 <input type="text" name="name" placeholder="Enter your name" required />
                 <br /><br />
@@ -263,16 +372,17 @@
     </section>
     <!-- End -->
 
-    <footer class="footer">
-        <div class="footer-container">
+    <!-- Footer -->
 
-            <!-- Column 1 -->
-            <div class="footer-col">
-                <h2 class="logo">NESTRO</h2>
+    <footer class="footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- About / Brand -->
+            <div class="footer-about">
+                <h3>NESTRO</h3>
                 <p><strong>(O) 123456789</strong><br>Phone Number</p>
                 <p><strong>Our Address</strong><br>NESTRO Headquarters, Sindh Manufacturing Industrial Area</p>
                 <a href="mailto:NESTRObot@gmail.com">nestrobot@gmail.com</a>
-
                 <div class="socials">
                     <a href="https://facebook.com" target="_blank">
                         <i class="fab fa-facebook-f"></i>
@@ -286,55 +396,45 @@
                 </div>
             </div>
 
-            <!-- Column 2 -->
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="#">PET Bottles Manufacturing</a>
-                <a href="#">PET Jars & Containers</a>
-                <a href="#">Custom Packaging Solutions</a>
-                <a href="#">Recyclable & Eco-friendly Packaging</a>
-                <a href="#">Leak & Seal Proof Designs</a>
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
 
-            <!-- Column 3 -->
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Our Products</a>
-                <a href="#">Reviews</a>
-                <a href="#">FAQS</a>
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Bottle Street, Karachi, Pakistan</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Email: info@petbot.com</p>
             </div>
+        </div>
 
-            <!-- Column 4 -->
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <a href="#">Request Sample</a>
-                <a href="#">Customized Container</a>
-                <a href="#">Download Catalog</a>
-                <a href="#">Bulk Orders</a>
-                <a href="#">Packaging Tips & Guides</a>
+        <hr />
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 PETBOT. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
             </div>
-
         </div>
     </footer>
 
-    <!-- WAVE BELOW FOOTER -->
-    <div class="footer-wave">
-        <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path d="
-      M0,160
-      C240,260 480,60 720,120
-      960,180 1200,260 1440,200
-      L1440,320 L0,320 Z">
-            </path>
-        </svg>
-    </div>
+    <!-- End -->
 
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./JAVA SCRIPT/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
